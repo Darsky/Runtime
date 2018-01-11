@@ -35,6 +35,7 @@
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     if(aSelector == @selector(negotiate))
     {
+        //https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100-SW1
         return [NSMethodSignature signatureWithObjCTypes:"v@:"];
     }
     return nil;
