@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE7C904520076A000034BC4F /* MessageForwardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7C904320076A000034BC4F /* MessageForwardingViewController.m */; };
+		DE7C904620076A000034BC4F /* MessageForwardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7C904420076A000034BC4F /* MessageForwardingViewController.xib */; };
+		DE7C904920076A500034BC4F /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7C904820076A500034BC4F /* Warrior.m */; };
+		DE7C904C20076A720034BC4F /* Diplomat.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7C904B20076A720034BC4F /* Diplomat.m */; };
+		DE7C905020076BAC0034BC4F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7C904F20076BAB0034BC4F /* ViewController.xib */; };
 		DE7EC8221FFCC097001123E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7EC8211FFCC097001123E0 /* AppDelegate.m */; };
 		DE7EC8251FFCC097001123E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7EC8241FFCC097001123E0 /* ViewController.m */; };
 		DE7EC8281FFCC097001123E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7EC8261FFCC097001123E0 /* Main.storyboard */; };
@@ -16,6 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE7C904220076A000034BC4F /* MessageForwardingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageForwardingViewController.h; sourceTree = "<group>"; };
+		DE7C904320076A000034BC4F /* MessageForwardingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageForwardingViewController.m; sourceTree = "<group>"; };
+		DE7C904420076A000034BC4F /* MessageForwardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageForwardingViewController.xib; sourceTree = "<group>"; };
+		DE7C904720076A500034BC4F /* Warrior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Warrior.h; sourceTree = "<group>"; };
+		DE7C904820076A500034BC4F /* Warrior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Warrior.m; sourceTree = "<group>"; };
+		DE7C904A20076A720034BC4F /* Diplomat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Diplomat.h; sourceTree = "<group>"; };
+		DE7C904B20076A720034BC4F /* Diplomat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Diplomat.m; sourceTree = "<group>"; };
+		DE7C904F20076BAB0034BC4F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		DE7EC81D1FFCC097001123E0 /* Runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7EC8201FFCC097001123E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE7EC8211FFCC097001123E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +52,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE7C903E200769EA0034BC4F /* MessageForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				DE7C903F200769EA0034BC4F /* Controller */,
+				DE7C9040200769EA0034BC4F /* Model */,
+				DE7C9041200769EA0034BC4F /* View */,
+			);
+			path = MessageForwarding;
+			sourceTree = "<group>";
+		};
+		DE7C903F200769EA0034BC4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE7C904220076A000034BC4F /* MessageForwardingViewController.h */,
+				DE7C904320076A000034BC4F /* MessageForwardingViewController.m */,
+				DE7C904420076A000034BC4F /* MessageForwardingViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE7C9040200769EA0034BC4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE7C904720076A500034BC4F /* Warrior.h */,
+				DE7C904820076A500034BC4F /* Warrior.m */,
+				DE7C904A20076A720034BC4F /* Diplomat.h */,
+				DE7C904B20076A720034BC4F /* Diplomat.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE7C9041200769EA0034BC4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DE7EC8141FFCC097001123E0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +109,8 @@
 		DE7EC81F1FFCC097001123E0 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				DE7C904F20076BAB0034BC4F /* ViewController.xib */,
+				DE7C903E200769EA0034BC4F /* MessageForwarding */,
 				DE7EC8201FFCC097001123E0 /* AppDelegate.h */,
 				DE7EC8211FFCC097001123E0 /* AppDelegate.m */,
 				DE7EC8231FFCC097001123E0 /* ViewController.h */,
@@ -129,9 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7C905020076BAC0034BC4F /* ViewController.xib in Resources */,
 				DE7EC82D1FFCC097001123E0 /* LaunchScreen.storyboard in Resources */,
 				DE7EC82A1FFCC097001123E0 /* Assets.xcassets in Resources */,
 				DE7EC8281FFCC097001123E0 /* Main.storyboard in Resources */,
+				DE7C904620076A000034BC4F /* MessageForwardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7EC8251FFCC097001123E0 /* ViewController.m in Sources */,
+				DE7C904C20076A720034BC4F /* Diplomat.m in Sources */,
+				DE7C904520076A000034BC4F /* MessageForwardingViewController.m in Sources */,
+				DE7C904920076A500034BC4F /* Warrior.m in Sources */,
 				DE7EC8301FFCC097001123E0 /* main.m in Sources */,
 				DE7EC8221FFCC097001123E0 /* AppDelegate.m in Sources */,
 			);

@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  Runtime
+//  iOSDesignPattern
 //
-//  Created by Darsky on 2018/1/3.
-//  Copyright © 2018年 Darsky. All rights reserved.
+//  Created by Darsky on 2017/12/14.
+//  Copyright © 2017年 Darsky. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
