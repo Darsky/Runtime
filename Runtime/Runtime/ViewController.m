@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MessageForwardingViewController.h"
+#import "DMRViewController.h"
 
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -28,7 +29,7 @@ static NSString *MainControllerCellIdentifier    = @"MainControllerCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _designPatterns = @[@"MessageForwarding"];
+    _designPatterns = @[@"MessageForwarding",@"DynamicMethodResolution"];
 }
 
 #pragma mark - UITableViewDataSource Method
@@ -67,6 +68,14 @@ static NSString *MainControllerCellIdentifier    = @"MainControllerCell";
         MessageForwardingViewController *vController = nil;
         vController = [[MessageForwardingViewController alloc] initWithNibName:@"MessageForwardingViewController"
                                                               bundle:nil];
+        [self.navigationController pushViewController:vController
+                                             animated:YES];
+    }
+    else if ([_designPatterns[indexPath.row] isEqualToString:@"DynamicMethodResolution"])
+    {
+        DMRViewController *vController = nil;
+        vController = [[DMRViewController alloc] initWithNibName:@"DMRViewController"
+                                                          bundle:nil];
         [self.navigationController pushViewController:vController
                                              animated:YES];
     }

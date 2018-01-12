@@ -18,6 +18,9 @@
 		DE7EC82A1FFCC097001123E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7EC8291FFCC097001123E0 /* Assets.xcassets */; };
 		DE7EC82D1FFCC097001123E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7EC82B1FFCC097001123E0 /* LaunchScreen.storyboard */; };
 		DE7EC8301FFCC097001123E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7EC82F1FFCC097001123E0 /* main.m */; };
+		DEC50CB220085EA600DC37FC /* DMRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC50CB020085EA600DC37FC /* DMRViewController.m */; };
+		DEC50CB320085EA600DC37FC /* DMRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC50CB120085EA600DC37FC /* DMRViewController.xib */; };
+		DEC50CB620085F3E00DC37FC /* DMRDemoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC50CB520085F3E00DC37FC /* DMRDemoObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,12 @@
 		DE7EC82C1FFCC097001123E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE7EC82E1FFCC097001123E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE7EC82F1FFCC097001123E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEC50CAF20085EA600DC37FC /* DMRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMRViewController.h; sourceTree = "<group>"; };
+		DEC50CB020085EA600DC37FC /* DMRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMRViewController.m; sourceTree = "<group>"; };
+		DEC50CB120085EA600DC37FC /* DMRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMRViewController.xib; sourceTree = "<group>"; };
+		DEC50CB420085F3E00DC37FC /* DMRDemoObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMRDemoObject.h; sourceTree = "<group>"; };
+		DEC50CB520085F3E00DC37FC /* DMRDemoObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMRDemoObject.m; sourceTree = "<group>"; };
+		DEC50CC0200865D100DC37FC /* DMRConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMRConfiguration.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,7 @@
 		DE7EC81F1FFCC097001123E0 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				DEC50CAB20085E8C00DC37FC /* DynamicMethodResolution */,
 				DE7C904F20076BAB0034BC4F /* ViewController.xib */,
 				DE7C903E200769EA0034BC4F /* MessageForwarding */,
 				DE7EC8201FFCC097001123E0 /* AppDelegate.h */,
@@ -122,6 +132,43 @@
 				DE7EC82F1FFCC097001123E0 /* main.m */,
 			);
 			path = Runtime;
+			sourceTree = "<group>";
+		};
+		DEC50CAB20085E8C00DC37FC /* DynamicMethodResolution */ = {
+			isa = PBXGroup;
+			children = (
+				DEC50CAC20085E8C00DC37FC /* Controller */,
+				DEC50CAD20085E8C00DC37FC /* Model */,
+				DEC50CAE20085E8C00DC37FC /* View */,
+			);
+			path = DynamicMethodResolution;
+			sourceTree = "<group>";
+		};
+		DEC50CAC20085E8C00DC37FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEC50CAF20085EA600DC37FC /* DMRViewController.h */,
+				DEC50CB020085EA600DC37FC /* DMRViewController.m */,
+				DEC50CB120085EA600DC37FC /* DMRViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DEC50CAD20085E8C00DC37FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEC50CB420085F3E00DC37FC /* DMRDemoObject.h */,
+				DEC50CB520085F3E00DC37FC /* DMRDemoObject.m */,
+				DEC50CC0200865D100DC37FC /* DMRConfiguration.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEC50CAE20085E8C00DC37FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +231,7 @@
 			files = (
 				DE7C905020076BAC0034BC4F /* ViewController.xib in Resources */,
 				DE7EC82D1FFCC097001123E0 /* LaunchScreen.storyboard in Resources */,
+				DEC50CB320085EA600DC37FC /* DMRViewController.xib in Resources */,
 				DE7EC82A1FFCC097001123E0 /* Assets.xcassets in Resources */,
 				DE7EC8281FFCC097001123E0 /* Main.storyboard in Resources */,
 				DE7C904620076A000034BC4F /* MessageForwardingViewController.xib in Resources */,
@@ -198,6 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7EC8251FFCC097001123E0 /* ViewController.m in Sources */,
+				DEC50CB620085F3E00DC37FC /* DMRDemoObject.m in Sources */,
+				DEC50CB220085EA600DC37FC /* DMRViewController.m in Sources */,
 				DE7C904C20076A720034BC4F /* Diplomat.m in Sources */,
 				DE7C904520076A000034BC4F /* MessageForwardingViewController.m in Sources */,
 				DE7C904920076A500034BC4F /* Warrior.m in Sources */,
