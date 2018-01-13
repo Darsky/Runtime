@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "MessageForwardingViewController.h"
 #import "DMRViewController.h"
-
+#import "AssociatedObjectViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -29,7 +29,8 @@ static NSString *MainControllerCellIdentifier    = @"MainControllerCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _designPatterns = @[@"MessageForwarding",@"DynamicMethodResolution"];
+    _designPatterns = @[@"MessageForwarding",@"DynamicMethodResolution",@"AssociatedObject"];
+    
 }
 
 #pragma mark - UITableViewDataSource Method
@@ -79,6 +80,15 @@ static NSString *MainControllerCellIdentifier    = @"MainControllerCell";
         [self.navigationController pushViewController:vController
                                              animated:YES];
     }
+    else if ([_designPatterns[indexPath.row] isEqualToString:@"AssociatedObject"])
+    {
+        AssociatedObjectViewController *vController = nil;
+        vController = [[AssociatedObjectViewController alloc] initWithNibName:@"AssociatedObjectViewController"
+                                                          bundle:nil];
+        [self.navigationController pushViewController:vController
+                                             animated:YES];
+    }
+    
 }
 
 

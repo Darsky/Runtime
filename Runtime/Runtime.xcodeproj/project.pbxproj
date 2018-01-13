@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE518DC52009F582002D9ABE /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE518DC42009F582002D9ABE /* AssociatedObject.m */; };
+		DE518DC82009F59A002D9ABE /* AssociatedObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DE518DC72009F59A002D9ABE /* AssociatedObject+Category.m */; };
+		DE518DCC2009F717002D9ABE /* AssociatedObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE518DCA2009F717002D9ABE /* AssociatedObjectViewController.xib */; };
+		DE518DCD2009F717002D9ABE /* AssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE518DCB2009F717002D9ABE /* AssociatedObjectViewController.m */; };
 		DE7C904520076A000034BC4F /* MessageForwardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7C904320076A000034BC4F /* MessageForwardingViewController.m */; };
 		DE7C904620076A000034BC4F /* MessageForwardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7C904420076A000034BC4F /* MessageForwardingViewController.xib */; };
 		DE7C904920076A500034BC4F /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7C904820076A500034BC4F /* Warrior.m */; };
@@ -24,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE518DC32009F582002D9ABE /* AssociatedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssociatedObject.h; sourceTree = "<group>"; };
+		DE518DC42009F582002D9ABE /* AssociatedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssociatedObject.m; sourceTree = "<group>"; };
+		DE518DC62009F59A002D9ABE /* AssociatedObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssociatedObject+Category.h"; sourceTree = "<group>"; };
+		DE518DC72009F59A002D9ABE /* AssociatedObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AssociatedObject+Category.m"; sourceTree = "<group>"; };
+		DE518DC92009F717002D9ABE /* AssociatedObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObjectViewController.h; sourceTree = "<group>"; };
+		DE518DCA2009F717002D9ABE /* AssociatedObjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssociatedObjectViewController.xib; sourceTree = "<group>"; };
+		DE518DCB2009F717002D9ABE /* AssociatedObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociatedObjectViewController.m; sourceTree = "<group>"; };
 		DE7C904220076A000034BC4F /* MessageForwardingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageForwardingViewController.h; sourceTree = "<group>"; };
 		DE7C904320076A000034BC4F /* MessageForwardingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageForwardingViewController.m; sourceTree = "<group>"; };
 		DE7C904420076A000034BC4F /* MessageForwardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageForwardingViewController.xib; sourceTree = "<group>"; };
@@ -61,6 +72,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE518DBF2009EF72002D9ABE /* AssociatedObject */ = {
+			isa = PBXGroup;
+			children = (
+				DE518DC02009EF72002D9ABE /* Controller */,
+				DE518DC12009EF72002D9ABE /* Model */,
+				DE518DC22009EF72002D9ABE /* View */,
+			);
+			path = AssociatedObject;
+			sourceTree = "<group>";
+		};
+		DE518DC02009EF72002D9ABE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE518DC92009F717002D9ABE /* AssociatedObjectViewController.h */,
+				DE518DCB2009F717002D9ABE /* AssociatedObjectViewController.m */,
+				DE518DCA2009F717002D9ABE /* AssociatedObjectViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE518DC12009EF72002D9ABE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE518DC32009F582002D9ABE /* AssociatedObject.h */,
+				DE518DC42009F582002D9ABE /* AssociatedObject.m */,
+				DE518DC62009F59A002D9ABE /* AssociatedObject+Category.h */,
+				DE518DC72009F59A002D9ABE /* AssociatedObject+Category.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE518DC22009EF72002D9ABE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DE7C903E200769EA0034BC4F /* MessageForwarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,13 +167,14 @@
 		DE7EC81F1FFCC097001123E0 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				DE518DBF2009EF72002D9ABE /* AssociatedObject */,
 				DEC50CAB20085E8C00DC37FC /* DynamicMethodResolution */,
-				DE7C904F20076BAB0034BC4F /* ViewController.xib */,
 				DE7C903E200769EA0034BC4F /* MessageForwarding */,
 				DE7EC8201FFCC097001123E0 /* AppDelegate.h */,
 				DE7EC8211FFCC097001123E0 /* AppDelegate.m */,
 				DE7EC8231FFCC097001123E0 /* ViewController.h */,
 				DE7EC8241FFCC097001123E0 /* ViewController.m */,
+				DE7C904F20076BAB0034BC4F /* ViewController.xib */,
 				DE7EC8261FFCC097001123E0 /* Main.storyboard */,
 				DE7EC8291FFCC097001123E0 /* Assets.xcassets */,
 				DE7EC82B1FFCC097001123E0 /* LaunchScreen.storyboard */,
@@ -229,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE518DCC2009F717002D9ABE /* AssociatedObjectViewController.xib in Resources */,
 				DE7C905020076BAC0034BC4F /* ViewController.xib in Resources */,
 				DE7EC82D1FFCC097001123E0 /* LaunchScreen.storyboard in Resources */,
 				DEC50CB320085EA600DC37FC /* DMRViewController.xib in Resources */,
@@ -245,13 +296,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE518DC82009F59A002D9ABE /* AssociatedObject+Category.m in Sources */,
 				DE7EC8251FFCC097001123E0 /* ViewController.m in Sources */,
 				DEC50CB620085F3E00DC37FC /* DMRDemoObject.m in Sources */,
 				DEC50CB220085EA600DC37FC /* DMRViewController.m in Sources */,
 				DE7C904C20076A720034BC4F /* Diplomat.m in Sources */,
 				DE7C904520076A000034BC4F /* MessageForwardingViewController.m in Sources */,
 				DE7C904920076A500034BC4F /* Warrior.m in Sources */,
+				DE518DCD2009F717002D9ABE /* AssociatedObjectViewController.m in Sources */,
 				DE7EC8301FFCC097001123E0 /* main.m in Sources */,
+				DE518DC52009F582002D9ABE /* AssociatedObject.m in Sources */,
 				DE7EC8221FFCC097001123E0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

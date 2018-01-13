@@ -12,6 +12,17 @@
 
 @implementation DMRDemoObject
 
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self)
+    {
+
+    }
+    return self;
+}
+
 + (BOOL)resolveInstanceMethod:(SEL)sel
 {
     if (sel == @selector(showInstanceMethod))
