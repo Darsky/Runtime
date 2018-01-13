@@ -9,6 +9,8 @@
 #import "AssociatedObjectViewController.h"
 #import "AssociatedObject+Category.h"
 #import "AssociatedObject.h"
+#import "AssociatedValue.h"
+
 
 @interface AssociatedObjectViewController ()
 
@@ -25,8 +27,14 @@
 - (IBAction)didDemoButtonTouch:(id)sender
 {
     AssociatedObject *model = [[AssociatedObject alloc] init];
-    model.associatedValue = @"Hello";
-    NSLog(@"%@",model.associatedValue);
+    
+    AssociatedValue *value = [[AssociatedValue alloc] init];
+    value.associatedValueName = @"Hello World";
+    [model setAssociatedValue:value
+                   withPolicy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
+    
+    NSLog(@"%@",[model associatedValue]);
+    
 }
 
 - (void)didReceiveMemoryWarning {

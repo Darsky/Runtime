@@ -7,9 +7,13 @@
 //
 
 #import "AssociatedObject.h"
+#import <objc/runtime.h>
+
 
 @interface AssociatedObject (Category)
 
-@property (copy, nonatomic) NSString *associatedValue;
+- (void)setAssociatedValue:(id)associatedValue
+                withPolicy:(objc_AssociationPolicy)policy;
 
+- (id)associatedValue;
 @end

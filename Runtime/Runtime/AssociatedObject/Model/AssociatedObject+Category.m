@@ -7,17 +7,17 @@
 //
 
 #import "AssociatedObject+Category.h"
-#import <objc/runtime.h>
-
+static char associatedObjectKey;
 @implementation AssociatedObject (Category)
 
-- (void)setAssociatedValue:(NSString *)associatedValue
+- (void)setAssociatedValue:(id)associatedValue
+                withPolicy:(objc_AssociationPolicy)policy
 {
-    objc_setAssociatedObject(self, @selector(associatedValue), associatedValue, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, &associatedObjectKey, associatedValue, policy);
 }
 
-- (NSString*)associatedValue
+- (id)associatedValue
 {
-    return objc_getAssociatedObject(self, _cmd);
+    return objc_getAssociatedObject(self, &associatedObjectKey);
 }
 @end

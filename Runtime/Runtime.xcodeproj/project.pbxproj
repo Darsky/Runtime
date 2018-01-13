@@ -11,6 +11,7 @@
 		DE518DC82009F59A002D9ABE /* AssociatedObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DE518DC72009F59A002D9ABE /* AssociatedObject+Category.m */; };
 		DE518DCC2009F717002D9ABE /* AssociatedObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE518DCA2009F717002D9ABE /* AssociatedObjectViewController.xib */; };
 		DE518DCD2009F717002D9ABE /* AssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE518DCB2009F717002D9ABE /* AssociatedObjectViewController.m */; };
+		DE518DD02009F8E1002D9ABE /* AssociatedValue.m in Sources */ = {isa = PBXBuildFile; fileRef = DE518DCF2009F8E1002D9ABE /* AssociatedValue.m */; };
 		DE7C904520076A000034BC4F /* MessageForwardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7C904320076A000034BC4F /* MessageForwardingViewController.m */; };
 		DE7C904620076A000034BC4F /* MessageForwardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7C904420076A000034BC4F /* MessageForwardingViewController.xib */; };
 		DE7C904920076A500034BC4F /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7C904820076A500034BC4F /* Warrior.m */; };
@@ -35,6 +36,8 @@
 		DE518DC92009F717002D9ABE /* AssociatedObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObjectViewController.h; sourceTree = "<group>"; };
 		DE518DCA2009F717002D9ABE /* AssociatedObjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssociatedObjectViewController.xib; sourceTree = "<group>"; };
 		DE518DCB2009F717002D9ABE /* AssociatedObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociatedObjectViewController.m; sourceTree = "<group>"; };
+		DE518DCE2009F8E1002D9ABE /* AssociatedValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssociatedValue.h; sourceTree = "<group>"; };
+		DE518DCF2009F8E1002D9ABE /* AssociatedValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssociatedValue.m; sourceTree = "<group>"; };
 		DE7C904220076A000034BC4F /* MessageForwardingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageForwardingViewController.h; sourceTree = "<group>"; };
 		DE7C904320076A000034BC4F /* MessageForwardingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageForwardingViewController.m; sourceTree = "<group>"; };
 		DE7C904420076A000034BC4F /* MessageForwardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageForwardingViewController.xib; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				DE518DC42009F582002D9ABE /* AssociatedObject.m */,
 				DE518DC62009F59A002D9ABE /* AssociatedObject+Category.h */,
 				DE518DC72009F59A002D9ABE /* AssociatedObject+Category.m */,
+				DE518DCE2009F8E1002D9ABE /* AssociatedValue.h */,
+				DE518DCF2009F8E1002D9ABE /* AssociatedValue.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				DE7C904920076A500034BC4F /* Warrior.m in Sources */,
 				DE518DCD2009F717002D9ABE /* AssociatedObjectViewController.m in Sources */,
 				DE7EC8301FFCC097001123E0 /* main.m in Sources */,
+				DE518DD02009F8E1002D9ABE /* AssociatedValue.m in Sources */,
 				DE518DC52009F582002D9ABE /* AssociatedObject.m in Sources */,
 				DE7EC8221FFCC097001123E0 /* AppDelegate.m in Sources */,
 			);
